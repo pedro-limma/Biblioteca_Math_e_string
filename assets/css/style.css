@@ -1,0 +1,40 @@
+body{
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+
+.campoTexto{
+  background-color:rgb(19, 19, 18);
+  width: 900px;
+  height: auto;
+  border-radius: 3px;
+  padding: 3px;
+  box-shadow: rgb(19, 19, 18);
+}
+
+.var{
+  color: hotpink;
+}
+
+.text{
+  color: yellow;
+}
+
+.simpleText{
+  color: white;
+}
+
+.func{
+  color: rgb(238, 58, 133);
+}
+
+
+.coment{
+  color: whitesmoke; 
+}
+
+.number{
+  color: rgb(81, 81, 214);
+}

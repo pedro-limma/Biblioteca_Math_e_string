@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/icons/iconfinder_Notes_132689.png" >
+    <title>Bibliotecas Math e String</title>
+  </head>
+  <body>
+    <h1>Bibliotecas</h1>
+    <h2>O que são bibliotecas ? </h2>
+    <p>
+      Bibliotecas são um conjunto de funções pré-escritas por outros programadores
+      que já resolvem determinado problema para que outros programadores possam resolver
+      esses problemas sem precisar inventar um código. Existem várias biblitecas dentro 
+      de uma linguagem de programação javaScript e vamos focar nesse documento 2 bibliotecas 
+      muito comuns na programação de um software. Sendo elas: 
+      <ul>
+        <li><b>Math</b></li>
+        <li><b>String</b></li>
+      </ul> 
+    </p>
+
+    <hr>
+
+    <h2>Biblioteca Math</h2>
+    <p>
+      O <b><i>Math</i></b> é um objeto global embutido que tem propriedades e 
+      métodos para constantes e funções matemáticas. Todas as propriedades dos 
+      métodos de <b><i>Math</i></b> são estáticos. Você pode tanto referenciar a 
+      constante PI usando <b><i>Math</i></b> e você pode chamar  a função para
+      calcular a potência <b><i>Math.pow(x, y)</i></b>, onde x e y são argumentos
+      da função.  
+    </p>
+
+    <h2>Propriedades</h2>
+    <ul>
+      <li><b><i>Math.E</i></b></li>
+      <p>
+        Constante de Euler e base dos logaritmos naturais, aproximadamente 2.718.
+      </p>
+      <li><b><i>Math.Ln2</i></b></li>
+      <p>
+        Logaritmo natural de 2, aproximadamente 0.693.
+      </p>
+      <li><b><i>Math.PI</i></b></li>
+      <p>
+        Relação entre a circunferência de um círculo e o seu diâmetro, aproximadamente 3.14159.
+      </p>
+    </ul>
+    <h2>Métodos</h2>
+    <ul>
+      <li><b><i>Math.abs(x)</i></b></li>
+      <p>
+        Retorna o módulo, ou valor absoluto, de um número (|x|).
+      </p>
+        <div class="campoTexto">
+          <p>
+            <label class="var">
+              var 
+            </label>
+            <label class="simpleText">
+              valor = 
+            </label>
+            <label class="number">
+              - 18 
+            </label>
+            <label class="simpleText">
+              ;
+            </label>
+            <label class="coment">
+              // Criação de váriavel com o valor numérico negativo.
+            </label>
+          </p>
+          <p>
+            <label class="simpleText">
+              console.
+            </label>
+            <label class="func">
+              log
+            </label>
+            <label class="simpleText">
+              (
+            </label>
+            <label class="simpleText">
+              Math.
+            </label>
+            <label class="func">
+              abs
+            </label>
+            <label class="simpleText">
+              (valor)
+            </label>
+            <label class="simpleText">
+              );
+            </label>
+            <label class="coment">
+              //retorna o valor <b><i>18</i></b> que é o módulo de |-18|
+            </label>
+          </p>
+        </div>
+        <li><b><i>Math.cbrt(x)</i></b></li>
+        <p>
+          Retorna a raiz cúbica de um número. 
+        </p>
+        <div class="campoTexto">
+          <p>
+            <label class="var">
+              var 
+            </label>
+            <label class="simpleText">
+              valor = 
+            </label>
+            <label class="number">
+              8
+            </label>
+            <label class="simpleText">
+              ;
+            </label>
+            <label class="coment">
+              // Criação de váriavel com o valor numérico.
+            </label>
+          </p>
+          <p>
+            <label class="simpleText">
+              console.
+            </label>
+            <label class="func">
+              log
+            </label>
+            <label class="simpleText">
+              (
+            </label>
+            <label class="simpleText">
+              Math.
+            </label>
+            <label class="func">
+              cbrt
+            </label>
+            <label class="simpleText">
+              (valor)
+            </label>
+            <label class="simpleText">
+              );
+            </label>
+            <label class="coment">
+              //retorna o valor <b><i>2</i></b> que é o resultado da raiz cúbica de 8.
+            </label>
+          </p>
+        </div>
+      <li><b><i>Math.floor(x)</i></b></li>
+      <p>
+        Retorna o maior inteiro que é menor ou igual a um número.
+      </p>
+      <div class="campoTexto">
+        <p>
+          <label class="var">
+            var 
+          </label>
+          <label class="simpleText">
+            num = 
+          </label>
+          <label class="number">
+            110.95
+          </label>
+          <label class="simpleText">
+            ;
+          </label>
+        </p>
+        <p>
+          <label class="simpleText">
+            console.
+          </label>
+          <label class="func">
+            log
+          </label>
+          <label class="simpleText">
+            ( Math.
+          </label>
+          <label class="func">
+            floor
+          </label>
+          <label class="simpleText">
+            (num));
+          </label>
+          <label class="coment">//O valor imprimido será 109 pois a função irá arredondar para baixo</label>
+        </p>
+      </div>
+
+      <li><b><i>Math.random()</i></b></li>
+      <p>
+        Retorna um valor aletório entre 0 e 1 mas sempre excluindo o 1. 
+      </p>
+      <div class="campoTexto">
+        <p>
+          <label class="simpleText">
+            console.
+          </label>
+          <label class="func">
+            log
+          </label>
+          <label class="simpleText">
+            (Math.
+          </label>
+          <label class="func">
+            random
+          </label>
+          <label class="simpleText">
+            ());
+          </label>
+          <label class="coment">
+            //O valor a ser imprimido no console será um valor aleatório entre 0 e 1 mas excluindo o 1.
+          </label>
+        </p>
+      </div>
+      <p>
+        Para aumentar o valor máximo do sorteio basta multiplicar pelo número que deseja usar como limite, 
+        sempre se atentando que esse número será excluido toda vez que randomizar um número.
+      </p>
+      <div class="campoTexto">
+        <p>
+          <label class="simpleText">
+            console.
+          </label>
+          <label class="func">
+            log
+          </label>
+          <label class="simpleText">
+            (Math.
+          </label>
+          <label class="func">
+            random
+          </label>
+          <label class="simpleText">
+            () * 5);
+          </label>
+          <label class="coment">
+            //O valor a ser imprimido no console será um valor aleatório entre 0 e 5 mas excluindo o 5.
+          </label>
+        </p>
+      </div>
+      <p>
+        Os valores que esse método retorna são valores do tipo float(possuem ponto flutuante),
+        para transformar esses valores quebrados em inteiros pode se usar o método parseInt(), ou 
+        utilizar métodos da biblioteca Math de arredondamento como já citado antes neste documento 
+        o <b><i>Math.floor()</i></b>.
+      </p>
+
+      <li><b><i>Math.trunc(x)</i></b></li>
+      <p>
+        Esse método retorna um valor sem quaisquer números fracionários, retorna só a parte inteira.
+      </p>
+      <div>
+        <p>
+          <label class="var">
+            var 
+          </label>
+          <label class="simpleText">
+            num_fracionado = 
+          </label>
+          <label class="number">
+            18.26
+          </label>
+          <label class="simpleText">
+            ;
+          </label>
+        </p>
+        <p>
+          <label class="simpleText">
+            console.
+          </label>
+          <label class="func">
+            log
+          </label>
+          <label class="simpleText">
+            (Math.
+          </label>
+          <label class="func">
+            trunc
+          </label>
+          <label class="simpleText">
+            (num_fracionado));
+          </label>
+          <label class="coment">
+            // O valor a ser impresso no console é só a parte inteira ou seja 18.
+          </label>
+        </p>
+      </div>
+    </ul>
+    <hr>
+    <h3>Exercicios: </h3>
+    <ol>
+      <li>1º faça um programa insira 2 números e sorteie um valor entre eles.</li>
+      <li>
+        2º faça um programa que você insira as medidas dos lados de um triângulo e 
+        o programa diz se é possivel ou não formar um triângulo. Caso seja possivél 
+        calcule o seno, cosseno e tangente deste triângulo. <br>
+        Obs.: as medidas necessitam estar em radianos.
+      </li>
+    </ol>
+  </body>
+</html>
