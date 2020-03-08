@@ -291,12 +291,284 @@
     <hr>
     <h3>Exercicios: </h3>
     <ol>
-      <li>1º faça um programa insira 2 números e sorteie um valor entre eles.</li>
+      <li> 
+        faça um programa insira 2 números e sorteie um valor entre eles.
+      </li>
       <li>
-        2º faça um programa que você insira as medidas dos lados de um triângulo e 
-        o programa diz se é possivel ou não formar um triângulo. Caso seja possivél 
-        calcule o seno, cosseno e tangente deste triângulo. <br>
-        Obs.: as medidas necessitam estar em radianos.
+        faça um programa que você insira as medidas dos lados de um triângulo e 
+        calcule o seno, cosseno e tangente deste triângulo. Obs.: as medidas necessitam estar em radianos.
+      </li>
+      <li>
+        faça um programa em que você insira o diâmetro de um círculo e calcule a área. Em seguida insira
+        a altura e calcule o volume do mesmo círculo.
+      </li>
+      <li>
+        faça um programa que insira as coordenadas de dois pontos em um espaço 10x10 
+        e calcule a distância Manhattan.
+      </li>
+    </ol>
+    <hr>
+    <h2>Biblioteca String</h2>
+    <p>
+      <b><i>String</i></b> é um objeto global para a contrução de Strings, ou sequência
+      de caracteres. Strings são úteis para guardar dados que são representados em forma 
+      de texto. A representação de uma String é feita da seguinte forma:
+    </p>
+
+    <div class="campoTexto">
+      <p>
+        <label class="text">
+          'Algum Texto sendo representado'
+        </label>
+        <label class="simpleText">;</label>
+        <label class="coment">
+          //Com aspas simples 
+        </label>
+      </p>
+      <p>
+        <label class="text">
+          "Outro Texto sendo representado"
+        </label>
+        <label class="simpleText">;</label>
+        <label class="coment">
+          //Ou com aspas duplas 
+        </label>
+      </p>
+    </div>
+    <hr>
+    <h2>Acessando caracteres</h2>
+    <p>
+      Uma das maneiras de acessar um determinado caractere de uma string é utilizando o 
+      método <b><i>charAt</i></b>
+    </p>
+
+    <div class="campoTexto">
+      <p>
+        <label class="simpleText">
+          console.
+        </label>
+        <label class="func">
+          log 
+        </label>
+        <label class="simpleText">
+          (
+        </label>
+        <label class="text">
+          'Casseb'
+        </label>
+        <label class="simpleText">.</label>
+        <label class="func" >
+          charAt
+        </label>
+        <label class="simpleText">
+          (
+        </label>
+        <label class="number">
+          4
+        </label>
+        <label class="simpleText">
+          ));
+        </label>
+        <label class="coment">
+          // Imprime no console 's' que é o caracter na posição 4. 
+        </label>
+      </p>
+    </div>
+    <hr>
+    <h2>Concatenando Strings</h2>
+    <p>
+      O ato de concatenar é quando dois textos são juntos por meio do operador de soma 
+      "+"
+    </p>
+
+    <div class="campoTexto">
+      <p>
+        <label class="var">
+          var 
+        </label>
+        <label class="simpleText">
+          nome = 
+        </label>
+        <label class="text">
+          "Ricardo"
+        </label>
+        <label class="simpleText">
+          ;
+        </label>
+      </p>
+      <p>
+        <label class="var">
+          var 
+        </label>
+        <label class="simpleText">
+          sobrenome = 
+        </label>
+        <label class="text">
+          "Casseb"
+        </label>
+        <label class="simpleText">
+          ;
+        </label>
+      </p>
+      <p>
+        <label class="simpleText">
+          console.
+        </label>
+        <label class="func">
+          log
+        </label>
+        <label class="simpleText">
+          (nome + 
+        </label>
+        <label class="text">
+          " "
+        </label>
+        <label class="simpleText">
+          + sobrenome); 
+        </label>
+        <label class="coment">
+          // O valor a ser mostrado no console será "Ricardo Casseb"
+        </label>
+      </p>
+    </div>
+    <hr>
+    <h2>Métodos</h2>
+    <ul>
+      <li><b><i>String.prototype.toLowerCase()</i></b></li>
+      <p>
+        Este método retorna o valor da String todo em minúsculos.
+      </p>
+      <div class="campoTexto">
+        <p>
+          <label class="simpleText">
+            console.
+          </label>
+          <label class="func">
+            log
+          </label>
+          <label class="simpleText">
+            (
+          </label>
+          <label class="text">
+            'SOFTWARE'
+          </label>
+          <label class="simpleText">.</label>
+          <label class="func">
+            toLowerCase
+          </label>
+          <label class="simpleText">
+            ());
+          </label>
+          <label class="coment">
+            //O valor a ser imprimido no console é 'software'.
+          </label>
+        </p>
+      </div>
+      <li><b><i>String.prototype.toUpperCase()</i></b></li>
+      <p>
+        Este método retorna o valor da String todo em maiúsculos.
+      </p>
+      <div class="campoTexto">
+        <p>
+          <label class="simpleText">
+            console.
+          </label>
+          <label class="func">
+            log
+          </label>
+          <label class="simpleText">
+            (
+          </label>
+          <label class="text">
+            'software'
+          </label>
+          <label class="simpleText">.</label>
+          <label class="func">
+            toUpperCase
+          </label>
+          <label class="simpleText">
+            ());
+          </label>
+          <label class="coment">
+            //O valor a ser imprimido no console é 'SOFTWARE'.
+          </label>
+        </p>
+      </div>
+      <li><b><i>String.prototype.replace(x, y)</i></b></li>
+      <p>
+        Este método utiliza dois parâmetros que são duas Strings, uma que irá ser localizada
+        e a outra que irá substituir a que foi localizada gerando uma nova string.
+      </p>
+      <div class="campoTexto">
+        <p>
+          <label class="var">
+            var 
+          </label>
+          <label class="simpleText">
+            texto = 
+          </label>
+          <label class="text">
+            "Eu gosto de estudar matemática"
+          </label>
+          <label class="simpleText">;</label>
+        </p>
+        <p>
+          <label class="simpleText">
+            console.
+          </label>
+          <label class="func">
+            log
+          </label>
+          <label class="simpleText">
+            (texto.
+          </label>
+          <label class="func">
+            replace
+          </label>
+          <label class="simpleText">
+            (
+          </label>
+          <label class="text">
+            "matemática"
+          </label>
+          <label class="simpleText">
+            , 
+          </label>
+          <label class="text">
+            "Programação"
+          </label>
+          <label class="simpleText">
+            ));
+          </label>
+          <label class="coment">
+            // O valor a ser direcionado para o console é "Eu gosto de estudar programação"
+          </label>
+        </p>
+      </div>
+    </ul>
+
+    <p>
+      Para mais informações sobre os Objetos Math e String
+      <ul>
+        <li>
+          <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String">+info sobre String</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math">+info sobre Math</a>
+        </li>
+      </ul>
+    </p>
+    <hr>
+    <h3>Exercicios: </h3>
+    <ol>
+      <li> 
+        Crie um programa que o usuário insira uma frase, em seguida mostre a frase. Após isso peça pra
+        ele digitar uma palavra da frase para substituir e que ele insira também o dado que vai substituir.
+        No final do processo mostre a nova frase.
+      </li>
+      <li>
+        Digite um programa que peça o primeiro nome do usuário, e mostre o nome dele em minúsculas, 
+        maiúsculas e no final a quantidade de letras.
       </li>
     </ol>
   </body>
