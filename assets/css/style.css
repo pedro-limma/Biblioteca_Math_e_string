@@ -6,6 +6,7 @@ body{
 
 
 .campoTexto{
+  margin-left: 50px;
   background-color:rgb(19, 19, 18);
   width: 900px;
   height: auto;
